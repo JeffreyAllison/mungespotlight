@@ -17,8 +17,8 @@ OUTPUT:
 
 ]*/
 
-export function getDogs(arr) {
-    return [];
+export function getDogs (arr) {
+  return arr.filter(dog => dog.type === 'dog');
 }
 
 /*
@@ -27,8 +27,8 @@ Output:
 ['spot', 'rover', 'jumpy', 'einstein']
 */
 
-export function makeArrayOfNames(arr) {
-    return [];
+export function makeArrayOfNames (arr) {
+  return arr.map(arr => arr.name);
 }
 
 /*
@@ -36,8 +36,8 @@ OUTPUT:
 ['spot', 'rover']
 */
 
-export function getNamesOfDogs(arr) {
-    return [];
+export function getNamesOfDogs (arr) {
+  return [];
 }
 
 /*
@@ -46,8 +46,8 @@ Output:
 ['cat', 'frog', 'dog', 'dog']
 */
 
-export function makeReversedArrayOfTypes(arr) {
-    return [];
+export function makeReversedArrayOfTypes (arr) {
+  return [];
 }
 
 /*
@@ -61,8 +61,8 @@ Output:
 ]
 */
 
-export function makeSpanishLanguageArray(arr) {
-    return [];
+export function makeSpanishLanguageArray (arr) {
+  return [];
 }
 
 /*
@@ -75,8 +75,8 @@ Output:
     { name: 'einstein', isHungry: true, type: 'cat' },
 ]*/
 
-export function makeArrayWithIsHungry(arr) {
-     return []
+export function makeArrayWithIsHungry (arr) {
+  return [];
 }
 
 /*
@@ -89,8 +89,8 @@ Output:
     { name: 'EINSTEIN', type: 'cat' },
 ]*/
 
-export function makeShoutingArray(arr) {
-    return [];
+export function makeShoutingArray (arr) {
+  return [];
 }
 
 
@@ -100,8 +100,8 @@ Output:
 ['spotdog', 'roverdog', 'jumpyfrog', einsteincat']
 */
 
-export function makeStringArray(arr) {
-    return [];
+export function makeStringArray (arr) {
+  return [];
 }
 
 /*
@@ -113,8 +113,8 @@ OUTPUT:
 { name: 'jumpy', type: 'frog' }
 */
 
-export function findByName(name, arr) {
-    return {};
+export function findByName (name, arr) {
+  return {};
 }
 
 /*
@@ -139,8 +139,8 @@ Output:
     ]
 */
 
-export function makeArrayOfArraysOfArrays(arr) {
-    return [];
+export function makeArrayOfArraysOfArrays (arr) {
+  return [];
 }
 
 ////////////////////////////////////////////////////////
@@ -168,8 +168,8 @@ Output:
 ];
 */
 
-export function getCars(arr) {
-    return [];
+export function getCars (arr) {
+  return [];
 }
 
 /*
@@ -181,8 +181,8 @@ Output:
 
 */
 
-export function getChevyCars(arr) {
-    return [];
+export function getChevyCars (arr) {
+  return [];
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -198,8 +198,8 @@ Output:
 'taurusmalibubroncosilveradoexpresscamero'
  */
 
-export function makeModelsStringWithReduce(arr) {
-    return '';
+export function makeModelsStringWithReduce (arr) {
+  return '';
 }
 
 /*
@@ -208,8 +208,8 @@ export function makeModelsStringWithReduce(arr) {
 Output: 14 
  */
 
-export function getSumOfAges(arr) {
-    return 0;
+export function getSumOfAges (arr) {
+  return 0;
 }
 
 /*
@@ -222,8 +222,8 @@ Output:
 }
  */
 
-export function makeCountObject(arr) {
-    return {};
+export function makeCountObject (arr) {
+  return {};
 }
 
 
@@ -235,6 +235,6 @@ Output:
  */
 
 
-export function makeKeysString(arr) {
-    return '';
+export function makeKeysString (arr) {
+  return '';
 }
