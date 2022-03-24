@@ -48,7 +48,8 @@ Output:
 */
 
 export function makeReversedArrayOfTypes (arr) {
-  return [];
+  let temp = arr.map(arr => arr.type);
+  return temp.reverse({});
 }
 
 /*
@@ -68,7 +69,7 @@ export function makeSpanishLanguageArray (arr) {
 
 /*
 Output:
-
+ 
 [
     { name: 'spot', isHungry: true, type: 'dog' },
     { name: 'rover', isHungry: true, type: 'dog' },
@@ -82,7 +83,7 @@ export function makeArrayWithIsHungry (arr) {
 
 /*
 Output:
-
+ 
 [
     { name: 'SPOT', type: 'dog' },
     { name: 'ROVER', type: 'dog' },
@@ -96,7 +97,7 @@ export function makeShoutingArray (arr) {
 
 
 /*
-
+ 
 Output:
 ['spotdog', 'roverdog', 'jumpyfrog', einsteincat']
 */
@@ -107,9 +108,9 @@ export function makeStringArray (arr) {
 
 /*
 findByName('jumpy', petsArray)
-
+ 
 (hint: how do you get the first item out of an array?)
-
+ 
 OUTPUT: 
 { name: 'jumpy', type: 'frog' }
 */
@@ -120,7 +121,7 @@ export function findByName (name, arr) {
 
 /*
 Output:
-
+ 
 [
     [
         ['name', 'spot'], 
@@ -148,7 +149,7 @@ export function makeArrayOfArraysOfArrays (arr) {
 
 /*
 For the next set of functions, assume the following input:
-
+ 
 [
     { type: 'car', make: 'ford', model: 'taurus', age: 2 },
     { type: 'car', make: 'chevy', model: 'malibu', age: 3 },
@@ -160,7 +161,7 @@ For the next set of functions, assume the following input:
 */
 
 /*
-
+ 
 Output: 
 [
     { type: 'car', make: 'ford', model: 'taurus', age: 2 },
@@ -179,7 +180,7 @@ Output:
         { type: 'car', make: 'chevy', model: 'malibu' },
         { type: 'car', make: 'chevy', model: 'camero' },
   ] ;
-
+ 
 */
 
 export function getChevyCars (arr) {
@@ -205,7 +206,7 @@ export function makeModelsStringWithReduce (arr) {
 
 /*
 (add all ages)
-
+ 
 Output: 14 
  */
 
@@ -214,7 +215,7 @@ export function getSumOfAges (arr) {
 }
 
 /*
-
+ 
 Output: 
 {
     car: 3,
@@ -229,7 +230,7 @@ export function makeCountObject (arr) {
 
 
 /*
-
+ 
 Output: 
 (order doesn't matter--but the string must include all keys for the first object in the array)
 'typemakemodelage'
