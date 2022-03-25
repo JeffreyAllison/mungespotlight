@@ -192,7 +192,7 @@ Output:
 */
 
 export function getChevyCars (arr) {
-  return arr.filter(car => car.make === 'car');
+  return arr.filter(arr => (arr.make === 'chevy' & arr.type === 'car'));
 
 }
 
