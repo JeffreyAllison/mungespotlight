@@ -17,8 +17,8 @@ OUTPUT:
 
 ]*/
 
-export function getDogs(arr) {
-    return [];
+export function getDogs (arr) {
+  return arr.filter(dog => dog.type === 'dog');
 }
 
 /*
@@ -27,8 +27,8 @@ Output:
 ['spot', 'rover', 'jumpy', 'einstein']
 */
 
-export function makeArrayOfNames(arr) {
-    return [];
+export function makeArrayOfNames (arr) {
+  return arr.map(arr => arr.name);
 }
 
 /*
@@ -36,8 +36,9 @@ OUTPUT:
 ['spot', 'rover']
 */
 
-export function getNamesOfDogs(arr) {
-    return [];
+export function getNamesOfDogs (arr) {
+  let temp = arr.filter(dog => dog.type === 'dog');
+  return temp.map(temp => temp.name);
 }
 
 /*
@@ -46,8 +47,9 @@ Output:
 ['cat', 'frog', 'dog', 'dog']
 */
 
-export function makeReversedArrayOfTypes(arr) {
-    return [];
+export function makeReversedArrayOfTypes (arr) {
+  let temp = arr.map(arr => arr.type);
+  return temp.reverse({});
 }
 
 /*
@@ -61,13 +63,17 @@ Output:
 ]
 */
 
-export function makeSpanishLanguageArray(arr) {
-    return [];
+export function makeSpanishLanguageArray (arr) {
+  let arrayInSpanish = [];
+  arr.forEach(item => {
+    arrayInSpanish.push({ nombre: item.name, tipo: item.type });
+  });
+  return arrayInSpanish;
 }
 
 /*
 Output:
-
+ 
 [
     { name: 'spot', isHungry: true, type: 'dog' },
     { name: 'rover', isHungry: true, type: 'dog' },
@@ -75,13 +81,17 @@ Output:
     { name: 'einstein', isHungry: true, type: 'cat' },
 ]*/
 
-export function makeArrayWithIsHungry(arr) {
-     return []
+export function makeArrayWithIsHungry (arr) {
+  let temp = arr;
+  temp.forEach(item => {
+    item.isHungry = true;
+  });
+  return temp;
 }
 
 /*
 Output:
-
+ 
 [
     { name: 'SPOT', type: 'dog' },
     { name: 'ROVER', type: 'dog' },
@@ -89,37 +99,37 @@ Output:
     { name: 'EINSTEIN', type: 'cat' },
 ]*/
 
-export function makeShoutingArray(arr) {
-    return [];
+export function makeShoutingArray (arr) {
+  return [];
 }
 
 
 /*
-
+ 
 Output:
 ['spotdog', 'roverdog', 'jumpyfrog', einsteincat']
 */
 
-export function makeStringArray(arr) {
-    return [];
+export function makeStringArray (arr) {
+  return [];
 }
 
 /*
 findByName('jumpy', petsArray)
-
+ 
 (hint: how do you get the first item out of an array?)
-
+ 
 OUTPUT: 
 { name: 'jumpy', type: 'frog' }
 */
 
-export function findByName(name, arr) {
-    return {};
+export function findByName (name, arr) {
+  return {};
 }
 
 /*
 Output:
-
+ 
 [
     [
         ['name', 'spot'], 
@@ -139,15 +149,15 @@ Output:
     ]
 */
 
-export function makeArrayOfArraysOfArrays(arr) {
-    return [];
+export function makeArrayOfArraysOfArrays (arr) {
+  return [];
 }
 
 ////////////////////////////////////////////////////////
 
 /*
 For the next set of functions, assume the following input:
-
+ 
 [
     { type: 'car', make: 'ford', model: 'taurus', age: 2 },
     { type: 'car', make: 'chevy', model: 'malibu', age: 3 },
@@ -159,7 +169,7 @@ For the next set of functions, assume the following input:
 */
 
 /*
-
+ 
 Output: 
 [
     { type: 'car', make: 'ford', model: 'taurus', age: 2 },
@@ -168,8 +178,8 @@ Output:
 ];
 */
 
-export function getCars(arr) {
-    return [];
+export function getCars (arr) {
+  return arr.filter(car => car.type === 'car');
 }
 
 /*
@@ -178,11 +188,12 @@ Output:
         { type: 'car', make: 'chevy', model: 'malibu' },
         { type: 'car', make: 'chevy', model: 'camero' },
   ] ;
-
+ 
 */
 
-export function getChevyCars(arr) {
-    return [];
+export function getChevyCars (arr) {
+  return arr.filter(arr => (arr.make === 'chevy' & arr.type === 'car'));
+
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -198,22 +209,22 @@ Output:
 'taurusmalibubroncosilveradoexpresscamero'
  */
 
-export function makeModelsStringWithReduce(arr) {
-    return '';
+export function makeModelsStringWithReduce (arr) {
+  return '';
 }
 
 /*
 (add all ages)
-
+ 
 Output: 14 
  */
 
-export function getSumOfAges(arr) {
-    return 0;
+export function getSumOfAges (arr) {
+  return 0;
 }
 
 /*
-
+ 
 Output: 
 {
     car: 3,
@@ -222,19 +233,19 @@ Output:
 }
  */
 
-export function makeCountObject(arr) {
-    return {};
+export function makeCountObject (arr) {
+  return {};
 }
 
 
 /*
-
+ 
 Output: 
 (order doesn't matter--but the string must include all keys for the first object in the array)
 'typemakemodelage'
  */
 
 
-export function makeKeysString(arr) {
-    return '';
+export function makeKeysString (arr) {
+  return '';
 }
