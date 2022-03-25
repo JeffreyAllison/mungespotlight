@@ -26,6 +26,7 @@ books.map(book => {
 ```
 
 This can be abbreviated, using implicit returns, like so:
+
 ```js
 books.map(book => book.title)
 ```
@@ -88,7 +89,7 @@ books
 
 ## Bonus: .reduce
 
-`.reduce` is a `for` loop method that lets you turn an array into anything. 
+`.reduce` is a `for` loop method that lets you turn an array into anything.
 
 This method takes two arguments: a callback and an initial accumulator.
 

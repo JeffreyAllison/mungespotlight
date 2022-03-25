@@ -82,7 +82,11 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry (arr) {
-  return [];
+  let temp = arr;
+  temp.forEach(item => {
+    item.isHungry = true;
+  });
+  return temp;
 }
 
 /*
@@ -175,7 +179,7 @@ Output:
 */
 
 export function getCars (arr) {
-  return [];
+  return arr.filter(car => car.type === 'car');
 }
 
 /*
@@ -188,7 +192,8 @@ Output:
 */
 
 export function getChevyCars (arr) {
-  return [];
+  return arr.filter(car => car.make === 'car');
+
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
